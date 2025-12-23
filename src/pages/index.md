@@ -286,7 +286,7 @@ Or if you don't want that, Elysia can also just use JSX and don't get me starts 
 
 There is a huge different between being compatible and specifically built for something and Elysia is <u>the only</u> framework that takes Bun seriously and built specifically for it.
 
-[Hono is originally built for Cloudflare Workers](https://www.youtube.com/watch?v=4ks1RvEM99Y) and later made compatible with Bun and Node but so is Elysia is originally built for Bun.
+[Hono is originally built for Cloudflare Workers](https://www.youtube.com/watch?v=4ks1RvEM99Y) and later made compatible with Bun and Node but so is Elysia is originally built for Bun. Hono maintainer is now also works at Cloudflare and Cloudflare back a lot on Hono so it's obvious where their focus is.
 
 You would never get to use Bun native features properly with Hono, nor performance or good TypeScript experience as Elysia but is also vice-versa for Elysia on Cloudflare Workers.
 
