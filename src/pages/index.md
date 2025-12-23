@@ -80,7 +80,7 @@ This works because Elysia is designed from the start for this kind of workflow a
 No, other established frameworks can't do this because there will be a huge breaking changes even more than Python 2 to Python 3.
 
 ## OpenAPI
-Literally, no other framework can generate OpenAPI properly without a massive amount of boilerplate and hacks for some reason and no one seems to care.
+Literally, not many TypeScript frameworks can generate OpenAPI properly without a massive amount of boilerplate and hacks for some reason and no one seems to care, why?
 
 This is what OpenAPI generation should looks like:
 ```typescript
@@ -232,8 +232,8 @@ new Elysia()
 This makes any part of Elysia a micro-app that can be split out and run independently.
 
 You don't declare a global type, ever.
-1. It's TypeScript limitation
-2. It causes implicit dependency that is hard to track
+1. There's a TypeScript limitation
+2. It break the dependency awareness and extremely hard to pin down where a property come from
 3. It doesn't enforce type integrity which is the whole point of Elysia
 
 It's designed to be able to convert from monolithic to microservice architecture or vice-versa in minutes because some random PMs (and there are a lot) decided to change their mind mid project and force you to do so.
@@ -308,7 +308,7 @@ You can use Elysia with Node or Deno or Cloudflare Workers or Vercel or **direct
 
 [Elysia does that too](https://elysiajs.com/eden/overview.html).
 
-Good luck using it with non-TypeScript backend and having a proper OpenAPI documentation, and don't get me start on how to upload a file and have it validate properly.
+Good luck using it with non-TypeScript backend and having a proper OpenAPI documentation, and don't get me start on how to upload a file and with correct type and validate it properly.
 
 Not convincing enough? [Here's a comparison](https://elysiajs.com/migrate/from-trpc.html).
 
@@ -326,6 +326,7 @@ If you still use Express in production, you don't get to complain about bus fact
 
 SaltyAom is just a **lead maintainer**, there are 4 more who contribute regulary and 100+ more contributors on Elysia.
 
+Speculatively (probably wrong):
 - Hono is **mainly** lead by 1 person and regularly maintain by 2-3 more people.
 - tRPC is **mainly** lead by 2-3 people and regularly maintain by 3-5 more people.
 - Express is literally abandoned for a decade until recently got a governance.
@@ -335,15 +336,17 @@ And it's literally an MIT license, you can fork it and do whatever with it if I 
 ## I just want to build my app
 I built Elysia not because I want to but because I was frustrated with existing frameworks.
 
-I does 5 years of freelancing using Express, NestJS, Fastify, Koa, tRPC or several other frameworks and none of it fixes the extreme workflows (and insane PM/clents) or 3 times a day requirement changes that broke everything that I have to deal with every single day.
+I does 5 years of freelancing using Express, NestJS, Fastify, Koa, tRPC or several other frameworks and none of it fixes the extreme workflows (and insane PM/clients) or 3 times a day requirement changes that broke everything that I have to deal with every single day.
 
 Trust me, the last thing I would do is to create another JavaScript framework but I hate that there's no single framework that can solve my problems even more.
 
-I didn't create Elysia just for fun but to solve real-world problems that no other frameworks even attempt to solve.
+I didn't create Elysia just for fun but to solve real-world problems that people don't even bother to solve.
 
 And one more thing, when I says it's hard to pull it off in type level, I really means it. [TypeScript type is turing complete](https://github.com/microsoft/TypeScript/issues/14833) and I wrote [GraphQL parser in Type Level](https://x.com/saltyAom/status/1687000580261289984) in 2 days or [simple type-aware SQL SELECt parser in a day](https://x.com/saltyAom/status/1824399487407685959?s=20) but it took me almost 3 years to make Elysia type soundness decent and fast enough for real-world applications due to shear complexity of TypeScript type system and its limitation.
 
 If you're curious, I'd recommend take a look at [Elysia code around starting from line 4,100+](https://github.com/elysiajs/elysia/blob/main/src/index.ts) which should give you a glimpse of how complex it is to pull it off. It even handle encapsulation in type-level.
+
+Also don't trust a random internet person. Try it yourself then come back and tell me I'm wrong.
 
 ## Just try it
 
@@ -361,9 +364,9 @@ If you fed up with JavaScript framework, the question isn't **"Why another JavaS
 
 If you want something better, you have to try something different even if it's *another JavaScript framework*.
 
-Of course, Elysia isn't perfect and might not be for your taste but it's the only framework of this decade that actually attempt to solve real-world problems that exists for years.
+Of course, Elysia isn't perfect and might not be for your taste but it's one of the only few frameworks of this decade that actually attempt to solve real-world problems that exists for years.
 
-It's ok if you have tried but don't like it, you can always go back to your old favorite framework. But don't complain about other people solution if you know the problems exists and refuse to fix it or try something different.
+It's ok if you tried but didn't like it, you can always stick with your favorite framework. But don't complain about other people solution if you know the problems exists and don't even try to fix the problems or try something different.
 
 <section class="text-2xl">
 
