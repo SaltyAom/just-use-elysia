@@ -42,9 +42,9 @@ new Elysia()
 
 This is what it should looks like. Any library, no extra boilerplate, no extra decorators, infers type and just works.
 
-I don't know why other frameworks struggle to even do this properly.
+I understand why it's hard to implement this due to sheer type wizardry required to pull it off but seriously, I don't understand why no one even attempt to do this properly.
 
-And don't get me started on OpenAPI generation because for Elysia, this is literally all it takes while other frameworks struggle to even do it properly.
+And don't get me started on OpenAPI generation, because this should be literally all it takes while most frameworks struggle to even do it properly.
 
 ## Type Integrity
 Your PM wants an API documentation. You spent 4 hours writing by hand and integrating a third-party library that barely works only have to rewrite it again tomorrow when your client requests changes that cause DTOs changes.
