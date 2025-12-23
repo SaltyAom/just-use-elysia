@@ -14,7 +14,7 @@ layout: '../layouts/index.astro'
 <small>This article might be heavily opinionated and biased. Feels free to disagree with any parts. This article has a passive aggressive tone to convey the similar atmosphere to justfuckinguse___ and motherfuckingwebsite.</small>
 
 ## TypeScript sucks
-You wrote 1,000,000 interface only to have it mismatch at runtime. TypeScript is just a type checker and does not guarantee type integrity at runtime.
+You wrote 1,000,000 interface only to have it mismatch at runtime. TypeScript is a compile-time type checker and does not guarantee type integrity at runtime.
 
 **"But there's Zod or ArkType or TypeBox or-"** the problem is not only with validation library but ok I'll bite.
 
@@ -107,9 +107,9 @@ And yes, it just works, unlike other frameworks that either generate incomplete 
 Don't believe me? [Here's a playground](https://elysiajs.com/tutorial/features/openapi/) go try it yourself.
 
 ### OpenAPI from types
-This is the part where Elysia truly shine.
+This is where Elysia become interesting.
 
-You can generate OpenAPI from TypeScript types if you want to.
+You can directly generate OpenAPI from TypeScript types.
 ```typescript
 import { Elysia, t } from 'elysia'
 import { openapi, fromTypes } from '@elysiajs/openapi'
@@ -126,7 +126,7 @@ export const app = new Elysia()
 
 **"It's just Zod schema"** or **"Hono/tRPC/oRPC can do that too!"**.
 
-[I got 100 similar replies](https://x.com/saltyAom/status/1969512978388304202) which basically sum up to this, which is funny because it proves my point exactly that it doesn't exists and people don't even think it's possible.
+[I got 50 similar replies](https://x.com/saltyAom/status/1969512978388304202) which basically sum up to this, which is funny because it proves the point exactly that this doesn't exists and people don't even think it's possible in TypeScript.
 
 If you take a closer look, you can see that there's no schema annotation required.
 
