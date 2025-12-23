@@ -282,13 +282,13 @@ Elysia can use [Bun Fullstack Dev Server](https://bun.com/docs/bundler/fullstack
 
 > Source code [on GitHub](https://github.com/SaltyAom/elysia-fullstack-example) to run locally
 
-Or if you don't want that, Elysia can also just use JSX.
+Or if you don't want that, Elysia can also just use JSX and don't get me starts on [Hono type limit](https://github.com/honojs/hono/issues/2399) which doesn't exists on Elysia.
 
 There is a huge different between being compatible and specifically built for something and Elysia is <u>the only</u> framework that takes Bun seriously and built specifically for it.
 
-And don't get me starts on [Hono type limit](https://github.com/honojs/hono/issues/2399) which doesn't exists on Elysia.
+[Hono is originally built for Cloudflare Workers](https://www.youtube.com/watch?v=4ks1RvEM99Y) and later made compatible with Bun and Node but so is Elysia is originally built for Bun.
 
-You would never get to use Bun native features properly with Hono, nor performance or good TypeScript experience as Elysia.
+You would never get to use Bun native features properly with Hono, nor performance or good TypeScript experience as Elysia but is also vice-versa for Elysia on Cloudflare Workers.
 
 Want a more detail comparison? [Here's a syntax comparison](https://elysiajs.com/migrate/from-hono.html).
 
