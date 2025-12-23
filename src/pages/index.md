@@ -57,12 +57,17 @@ The answer is very obvious. Your schema is your single source of truth.
 Yet no frameworks **even pretends** to do that because it's much harder than it seems.
 
 Your schema should be used for:
-- Type Checking (TypeScript)
-- Runtime Validation
-- OpenAPI Generation
-- Pass down to Frontend similar to tRPC
+1. Type Checking (TypeScript)
+2. Runtime Validation
+3. OpenAPI Generation
+4. Pass down to Frontend similar to tRPC
 
 When you edit your schema, everything else should update automatically, and there should be a compile-time error if something breaks.
+
+<video class="rounded-2xl" controls>
+  <source src="/assets/eden-treaty.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 You use Prisma or Drizzle? Even better, now database type is now your single source of truth and everything can be derived from it. You can even use it to validate incoming request with [Prisma Box](https://elysiajs.com/integrations/prisma.html) or [Drizzle TypeBox](https://elysiajs.com/integrations/drizzle.html).
 
