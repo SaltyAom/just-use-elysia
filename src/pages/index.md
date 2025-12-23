@@ -42,7 +42,7 @@ new Elysia()
 
 This is what it should looks like. Any library, no extra boilerplate, no extra decorators, infers type and just works.
 
-I understand why it's hard to implement this due to sheer type wizardry required to pull it off but seriously, I don't understand why no one even attempt to do this properly.
+I understand why it's hard to implement this due to art of TypeScript type system, but seriously, it's not that hard to pull off.
 
 And don't get me started on OpenAPI generation, because this should be literally all it takes while most frameworks struggle to even do it properly.
 
