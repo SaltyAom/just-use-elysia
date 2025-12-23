@@ -20,7 +20,7 @@ You wrote 1,000,000 interface only to have it mismatch at runtime. TypeScript is
 
 Have fun writing boilerplate to integrate them with your framework of choice.
 - Express? Zodios exists just to fix that and it's not even close.
-- NestJS? Good luck no using class-validator that no one use.
+- NestJS? Have fun not using class-validator or writing custom pipes.
 
 Elysia accept literally any library that is compatible with [Standard Schema](https://github.com/standard-schema/standard-schema).
 
@@ -40,7 +40,9 @@ new Elysia()
    	})
 ```
 
-I can assure you, no other framework makes it this easy to integrate any validation library.
+This is what it should looks like. Any library, no extra boilerplate, no extra decorators, infers type and just works.
+
+I don't know why other frameworks struggle to even do this properly.
 
 And don't get me started on OpenAPI generation because for Elysia, this is literally all it takes while other frameworks struggle to even do it properly.
 
