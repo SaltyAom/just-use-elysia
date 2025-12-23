@@ -1,0 +1,34 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+html, body {
+	@apply bg-gray-50 dark:bg-gray-900;
+}
+
+pre .popover {
+	@apply bg-white text-gray-900 dark:bg-gray-400;
+
+	.arrow {
+		@apply bg-white border-white;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+  	.astro-code,
+  	.astro-code span {
+	    color: var(--shiki-dark) !important;
+	    background-color: var(--shiki-dark-bg) !important;
+	    /* Optional, if you also want font styles */
+	    font-style: var(--shiki-dark-font-style) !important;
+	    font-weight: var(--shiki-dark-font-weight) !important;
+	    text-decoration: var(--shiki-dark-text-decoration) !important;
+	}
+
+	pre .popover {
+		@apply bg-gray-700!;
+
+		.arrow {
+			@apply bg-gray-700! border-gray-700!;
+		}
+	}
+}
