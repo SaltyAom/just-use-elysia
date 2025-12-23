@@ -11,7 +11,7 @@ layout: '../layouts/index.astro'
 
 **You are not wrong.** You lost hope because JavaScript developers rarely do things right.
 
-<small>This article is heavily opinionated and biased. Feels free to disagree with any parts as this is going to be extremely passive aggressive to convey the similar tone to justfuckinguse___ and motherfuckingwebsite.</small>
+<small>This article might be heavily opinionated and biased. Feels free to disagree with any parts. This article has a passive aggressive tone to convey the similar atmosphere to justfuckinguse___ and motherfuckingwebsite.</small>
 
 ## TypeScript sucks
 You wrote 1,000,000 interface only to have it mismatch at runtime. TypeScript is just a type checker and does not guarantee type integrity at runtime.
@@ -145,7 +145,7 @@ Spring and FastAPI does this but not even a single JavaScript framework does thi
 This is the only way to keep everything in sync without losing your mind.
 
 ## Type Soundness - Non-happy part
-If you scroll back to OpenAPI example, you will a response code for `200`, `418` ad `420`.
+If you scroll back to OpenAPI example, you will see a response code for `200`, `418` and `420`.
 
 What others framework do is assume that your API will always return a happy path and never really account for an proper error handling especially for JavaScript developers.
 
