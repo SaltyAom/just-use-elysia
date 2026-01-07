@@ -140,7 +140,7 @@ This requires an insane amount of TypeScript wizardry which no other framework e
 
 Why? If you have ever done any freelancing, you will know that your QA/PM/clients will change their mind 3 times a day and cause breaking changes to your DTOs/Database schema and force you to rewrite everything again while PM require you to have an API documentation in sync when everything is falling apart for some reason, and it happens more often than you think.
 
-Spring and FastAPI does this but not even a single JavaScript framework does this without resort to runtime schema or transformer which requires ttypescript or similar (like typia, io-ts, deepkit schema) except Elysia.
+Spring and FastAPI does this but not even a single JavaScript framework does this without resort to runtime schema or transformer which requires typescript or similar (like typia, io-ts, deepkit schema) except Elysia.
 
 This is the only way to keep everything in sync without losing your mind.
 
